@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 header {
   height: 64px;
 }
@@ -140,55 +144,129 @@ footer a {
     margin-top: 20px;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+
 footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #F5EBF3;
+}
+
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .content p, a {
     color: #44223B;
 }
 
-#buttons {
-    display: flex;
-    margin-top: 60px;
-    justify-content: center;
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
 }
 
-#buttons a {
-    margin-bottom: 16px;
-    color: ivory;
-    background: #C790B8;
-    border-radius: 18px;
-    padding: 12px 18px;
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #44223B;
+  margin-bottom: 16px;
+
 }
 
-#buttons a:hover {
-    color: #C790B8;
-    background: ivory;
+footer .content p{
+  text-align: justify;
 }
 
-#b1 {
-    margin-left: 10px;
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
 }
 
-i img {
+footer .content .lower i{
+  padding-right: 16px;
+}
+
+footer .content .middle{
+  padding-left: 80px;
+}
+
+footer .content .middle a{
+  line-height: 32px;
+}
+
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #44223B;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+
+.content .media-icons a:hover{
+  border-color: #44223B;
+}
+
+footer .bottom {
+  width: 100%;
+  text-align: center;
+  color: #44223B;
+  background-color: #E9D4E5;
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #44223B;
+}
+
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
     margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
 }
 
-#social {
-    color: #44223B;
-    padding-bottom: 30px;
-}
-
-.social {
-    color: ivory;
-    background: #C790B8;
-    border-radius: 34px;
-    padding: 14px 18px;
-    font-size: 22px;
-    margin-left: 16px;
-}
-
-.social:hover {
-    color: #C790B8;
-    background: ivory;
-}
   
 @media (max-width: 991px) {
     #showcase {

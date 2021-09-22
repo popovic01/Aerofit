@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'Poppins', sans-serif;*/
+}
+
+body {
+    background: url('AboutUs.jpg');
+    background-size: cover;
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 20px 100px 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url('../../assets/images/AboutUs.jpg');
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container .contactInfo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .socialMedia {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.socialMedia .box2 {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.socialMedia .icon {
+  min-width: 45px;
+  height: 45px;
+  color: white;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 18px;
+  margin: 10px;
+}
+
+.socialMedia .icon:hover {
+  background: white;
+  color: #B5649D;
+}
+
+.container .contactInfo .box {
+  position: relative;
+  padding: 30px 0;
+  display: flex;
+}
+
+.container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #E4C8DC;
+  color: #B5649D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: ivory;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.3rem;
+}
+
+.container .contactInfo .box .text h3 {
+   font-weight: 700;
+   color: #EFDEEA;
+   font-size: 20px;
+}
+
+form { 
+    margin: 50px 50px; 
+    background-color: #FFF;
+    width: 500px;
+    padding: 20px 40px 30px 40px;
+    border-radius: 10px;
+}
+
+form h2 {
+    font-size: 30px;
+    color: #AF6A9A;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #B5649D;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#EFDEEA;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color: #B5649D;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+[type="submit"]:hover { 
+    background: #B5649D;
+    color: #EFDEEA;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 34px;
+}
+
+#how {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 26px;
+  margin: 0;
+  color: #1B212A;
+}
+
+.location {
+  background: #c7c9ce;
+}
+
+.placeholder{
+  color: #0F1217;
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .contactInfo {
+    margin-bottom: 40px;
+  }
+  .container .contactInfo, .contactForm {
+    width: 100%;
+  }
+  .container .socialMedia {
+    margin-right: 0;
+  }
+}
